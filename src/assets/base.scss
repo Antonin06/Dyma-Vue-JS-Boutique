@@ -1,0 +1,77 @@
+:root {
+	--font-family:  'Roboto', sans-serif;
+	--primary-1: #9b59b6;
+	--primary-2: #8e44ad;
+	--danger-1: #e74c3c;
+	--danger-2: #c0392b;
+	--success-1: #2ecc71;
+	--success-2: #27ae60;
+	--text-color: #333;
+	--text-color-light: #FFF;
+	--white: #FFF;
+	--gray-1: #95a5a6;
+	--gray-2: #7f8c8d;
+
+	--border: 1px solid var(--gray-2);
+	--border-radius: 4px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+body {
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background: var(--white);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-fill {
+	flex: 1 1 auto;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
