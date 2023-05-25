@@ -6,6 +6,9 @@
     product: ProductInterface
   }>()
   // console.log(product)
+  const emit = defineEmits<{
+    (e: 'addProductToCart', productID: number): void
+  }>()
 </script>
 
 <template>
@@ -15,6 +18,7 @@
     <div class="description">{{ product.description }}</div>
     <div class="price">{{ product.price }}</div>
     <div class="quantity">x 1</div>
+    <button @click="emit('addProductToCart', product.id)">Add to cart</button>
   </div>
 </template>
 

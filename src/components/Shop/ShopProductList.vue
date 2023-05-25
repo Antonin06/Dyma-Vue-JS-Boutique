@@ -5,11 +5,19 @@ import type {ProductInterface} from "@/interfaces/product.interface";
 defineProps<{
   products: ProductInterface[]
 }>()
+
+const emit = defineEmits<{
+  (e: 'addProductToCart', productID: number): void
+}>()
 </script>
 
 <template>
 	<div class="grid">
-		<ShopProduct v-for="product of products" :product="product"/>
+		<ShopProduct
+        v-for="product of products"
+        :product="product"
+        @add-product-to-cart="emit('addProductToCart', $event)"
+    />
 	</div>
 </template>
 
