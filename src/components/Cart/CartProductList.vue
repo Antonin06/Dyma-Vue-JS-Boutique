@@ -3,7 +3,7 @@ import CartProduct from "@/components/Cart/CartProduct.vue";
 </script>
 
 <template>
-	<div>
+	<div class="grid">
 		<CartProduct />
 		<CartProduct />
 		<CartProduct />
@@ -11,5 +11,9 @@ import CartProduct from "@/components/Cart/CartProduct.vue";
 </template>
 
 <style scoped lang="scss">
-
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
 </style>
